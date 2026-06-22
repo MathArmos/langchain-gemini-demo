@@ -1,0 +1,5 @@
+# Manter estes arquivos fora da estatística de linguagens do GitHub.
+# São currículos/vagas usados como dados de demonstração, não código do projeto.
+docs/** linguist-documentation
+docs/curriculo/*.html linguist-vendored
+docs/curriculo/*.pdf linguist-vendored
