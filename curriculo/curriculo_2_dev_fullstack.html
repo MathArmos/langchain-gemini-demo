@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Matheus Ramos — Dev FullStack</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background: linear-gradient(to right, #313d44 0 35%, #ffffff 35% 100%);
+  }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 10.3px;
+    line-height: 1.45;
+    color: #2c2c2c;
+  }
+  .wrap { display: grid; grid-template-columns: 35% 65%; min-height: 297mm; }
+
+  /* ---------- SIDEBAR ---------- */
+  .side { padding: 26px 20px 30px; color: #dfe4e6; }
+  .name { font-size: 25px; font-weight: 700; line-height: 1.05; color: #ecb389; letter-spacing: .5px; }
+  .role { margin-top: 8px; font-size: 11px; font-weight: 600; color: #f3f5f6; text-transform: uppercase; letter-spacing: .6px; }
+  .subrole { margin-top: 5px; font-size: 9.6px; color: #aeb7bb; font-style: italic; }
+
+  .side h2 {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+    color: #ecb389; margin: 16px 0 7px; padding-bottom: 4px;
+    border-bottom: 1px solid #4a565d;
+  }
+  .side .first { margin-top: 20px; }
+  .contact p { margin: 3px 0; font-size: 9.5px; color: #d6dcde; word-break: break-word; }
+  .side ul { list-style: none; }
+  .side li { margin: 0 0 4px; padding-left: 11px; position: relative; font-size: 9.5px; color: #d2d8da; }
+  .side li::before { content: ""; position: absolute; left: 0; top: 6px; width: 4px; height: 4px; background: #ecb389; border-radius: 50%; }
+  .side li b { color: #fff; font-weight: 600; }
+  .side li i { color: #a9b2b6; font-style: italic; }
+
+  /* ---------- MAIN ---------- */
+  .main { padding: 26px 26px 30px; background: #fff; }
+  .main h2 {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+    color: #313d44; background: #f7dac6; padding: 6px 11px; margin: 20px 0 11px; border-radius: 3px;
+  }
+  .main h2.first { margin-top: 0; }
+  .perfil { font-size: 10.3px; color: #3a3a3a; text-align: justify; }
+  .perfil b { color: #1f2a30; }
+
+  .job-title { font-size: 13px; font-weight: 700; color: #313d44; margin-top: 2px; }
+  .job-sub { font-size: 9.6px; font-weight: 600; color: #b8703f; margin: 2px 0 8px; }
+  .job-desc { font-size: 10px; color: #3a3a3a; }
+  .job-desc b { color: #1f2a30; }
+
+  .status { background: #f4f6f7; border-left: 3px solid #ecb389; padding: 7px 11px; margin: 10px 0 12px; font-size: 9.5px; color: #44505a; }
+  .status b { color: #2a343a; }
+
+  .block { margin-top: 11px; }
+  .block-h { font-size: 10.3px; font-weight: 700; color: #b8703f; margin-bottom: 5px; }
+  .main ul { list-style: none; margin-left: 2px; }
+  .main li { position: relative; padding-left: 13px; margin-bottom: 4px; font-size: 9.8px; color: #383838; }
+  .main li::before { content: "▸"; position: absolute; left: 0; top: -1px; color: #ecb389; font-size: 9px; }
+  .main li b { color: #1f2a30; font-weight: 600; }
+
+  .stackline { margin-top: 12px; font-size: 9.6px; color: #444; }
+  .stackline b { color: #313d44; }
+  code { font-family: "Consolas", "Courier New", monospace; font-size: 9px; background: #eef1f2; padding: 1px 4px; border-radius: 3px; color: #34424a; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="side">
+    <div class="name">MATHEUS<br>RAMOS</div>
+    <div class="role">Desenvolvedor Full Stack</div>
+    <div class="subrole">Foco em desenvolvimento assistido por IA</div>
+
+    <h2 class="first">Contato</h2>
+    <div class="contact">
+      <p>📱 (44) 99871-8587</p>
+      <p>✉️ mathx1celular19@gmail.com</p>
+      <p>🔗 linkedin.com/in/matheus-ramos-322644212</p>
+      <p>💻 github.com/MathArmos</p>
+    </div>
+
+    <h2>Linguagens e Habilidades</h2>
+    <ul>
+      <li><b>TypeScript</b> · <b>JavaScript</b></li>
+      <li><b>Node.js</b> (APIs e sistemas) · <b>Express</b></li>
+      <li><b>React</b> (painel web)</li>
+      <li><b>PostgreSQL</b> + <b>Prisma</b> · Yup · APIs REST</li>
+      <li><b>Redis</b> + BullMQ · Arquitetura <b>CSMR</b></li>
+      <li><b>Skills, Agents e MCPs</b> (Claude Code — dev assistido por IA e code review)</li>
+      <li>Git / GitHub · Google Cloud (deploy) · Vertex AI (Gemini)</li>
+    </ul>
+
+    <h2>Formação</h2>
+    <ul>
+      <li><b>Engenharia de Software</b> — UniCesumar <i>(cursando)</i></li>
+      <li>Curso de <b>Node.js</b> — ONP</li>
+      <li>Curso de <b>JavaScript</b> — ONP</li>
+      <li>Workshop <b>Dev assistido por IA avançado</b> — Tech Leads Club <i>(Waldemar Neto)</i></li>
+      <li><b>Análise e Design de Software</b> — ACCION Sistemas <i>(presencial)</i></li>
+      <li>Workshop <b>UX/UI Design</b> — Kacio Felipe</li>
+      <li><b>Inglês</b> <i>(técnico/básico)</i></li>
+    </ul>
+
+    <h2>Formações em andamento</h2>
+    <ul>
+      <li><b>Google Cloud ACE</b> <i>(em estudo)</i></li>
+      <li><b>Google ADK</b> — Agent Development Kit <i>(em estudo)</i></li>
+      <li>Leitura: <i>Arquitetura de Software: as Partes Difíceis</i> — Neal Ford et al.</li>
+      <li>Próxima: <i>O Engenheiro de Software com Mentalidade de Produto</i></li>
+    </ul>
+
+    <h2>Interesses</h2>
+    <ul>
+      <li>Dominar <b>UX/UI Design</b></li>
+      <li>Aprimorar inglês</li>
+    </ul>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main">
+    <h2 class="first">Perfil</h2>
+    <p class="perfil">
+      Desenvolvedor full stack com pouco mais de 1 ano de experiência e <b>mentalidade de dono</b> —
+      me importo com o produto como se fosse meu. Construí e mantenho um sistema completo (backend +
+      painel web) de um <b>agente conversacional inteligente</b>, do banco de dados à integração com
+      APIs externas — atualmente <b>implantado na Google Cloud, em fase de treinamento supervisionado
+      com o setor de qualidade</b>. Uso <b>IA no fluxo de desenvolvimento todos os dias</b> de forma
+      responsável, com revisão e qualidade nas entregas.
+    </p>
+
+    <h2>Experiência</h2>
+    <div class="job-title">Guardian — Sistema de Porteiro Virtual Inteligente</div>
+    <div class="job-sub">Projeto autoral fullstack · Implantado na Google Cloud (em treinamento supervisionado)</div>
+    <p class="job-desc">
+      Sistema completo que atua como <b>porteiro virtual via WhatsApp</b> para uma empresa de portaria
+      remota, <b>projetado para atender múltiplos condomínios</b>. Desenvolvimento <b>fullstack ponta
+      a ponta</b>: backend do agente, banco de dados, integrações externas e <b>painel web para
+      operadores</b>.
+    </p>
+
+    <div class="status">
+      <b>Status:</b> implantado e rodando na <b>Google Cloud</b>, atualmente em <b>treinamento
+      supervisionado com o setor de qualidade</b> — rollout gradual antes de entrar em operação nos
+      condomínios.
+    </div>
+
+    <div class="block">
+      <div class="block-h">Backend &amp; Arquitetura</div>
+      <ul>
+        <li><b>Node.js + TypeScript + Express</b> no padrão <b>CSMR</b> (Controller, Service, Models, Repositories) com factories por domínio</li>
+        <li><b>PostgreSQL + Prisma + Yup</b> · modelagem de dados multi-tenant (isolamento por <code>tenantId</code>)</li>
+        <li><b>APIs REST</b> consumidas pelo painel web</li>
+        <li><b>Redis + BullMQ</b>: filas assíncronas, workers dedicados e deduplicação de mensagens</li>
+        <li>Integração com <b>Meta Cloud API</b> (WhatsApp) via webhook com validação <b>HMAC</b></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="block-h">Front-end</div>
+      <ul>
+        <li><b>Painel web em React</b> para operadores e equipe de qualidade — consome a API REST do backend (ocorrências, dispositivos, métricas)</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="block-h">Inteligência (IA)</div>
+      <ul>
+        <li>Agente baseado em <b>Gemini 2.5 Flash</b> (Google Vertex AI) com <b>function calling</b> e <b>structured outputs</b></li>
+        <li>Integração responsável de IA na lógica de negócio (consultas, pré-cadastros, abertura de solicitações)</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="block-h">Confiabilidade &amp; Segurança</div>
+      <ul>
+        <li><b>Circuit breakers</b>, <b>retry com backoff exponencial</b> e <b>rate limiting</b> (Redis) nas integrações externas</li>
+        <li>Autenticação <b>JWT role-based</b>, bcrypt, auditorias <b>OWASP Top 10</b> e retenção de dados <b>LGPD</b></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <div class="block-h">Qualidade</div>
+      <ul>
+        <li>Suíte de testes <b>Jest</b> (sem dependências externas) cobrindo segurança, filas e isolamento de dados</li>
+        <li><b>Code review assistido por IA</b> (Claude Code: skills, agents e MCPs) no fluxo de desenvolvimento</li>
+      </ul>
+    </div>
+
+    <p class="stackline"><b>Stack:</b> Node.js · TypeScript · React · Express · PostgreSQL · Prisma · Redis · BullMQ · Meta Cloud API · Vertex AI · Google Cloud</p>
+  </main>
+
+</div>
+</body>
+</html>
